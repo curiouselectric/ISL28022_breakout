@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:DC_Power_Monitor-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -166,7 +167,7 @@ F 8 "~" H 6100 1600 60  0001 C CNN "Cost"
 	1    6100 1600
 	0    -1   -1   0   
 $EndComp
-Text Notes 6600 4400 0    60   ~ 0
+Text Notes 6450 6100 0    60   ~ 0
 ESD Protection - Low Speed\nHigh Impedance Path when no shunt attached
 Wire Wire Line
 	6000 4700 6450 4700
@@ -365,84 +366,102 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5F968AD3
-P 1600 3750
-F 0 "J1" H 1517 3320 50  0000 C CNN
-F 1 "DATA" H 1517 3413 50  0000 C CNN
-F 2 "REInnovationFootprint:SIL-4_Grove_Labelled_Correct" H 1600 3750 50  0001 C CNN
-F 3 "~" H 1600 3750 50  0001 C CNN
-	1    1600 3750
+P 1950 4850
+F 0 "J1" H 1867 4420 50  0000 C CNN
+F 1 "DATA" H 1867 4513 50  0000 C CNN
+F 2 "REInnovationFootprint:SIL-4_Grove_Labelled_Correct" H 1950 4850 50  0001 C CNN
+F 3 "~" H 1950 4850 50  0001 C CNN
+	1    1950 4850
 	-1   0    0    -1  
 $EndComp
-Text HLabel 2700 3750 2    60   Input ~ 0
+Text HLabel 3050 4850 2    60   Input ~ 0
 SDA
-Text HLabel 2700 3650 2    60   Input ~ 0
+Text HLabel 3050 4750 2    60   Input ~ 0
 SCLK
-Text HLabel 2700 3950 2    60   Input ~ 0
+Text HLabel 3050 5050 2    60   Input ~ 0
 GND
-Text HLabel 2700 3850 2    60   Input ~ 0
+Text HLabel 3050 4950 2    60   Input ~ 0
 Vcc
-Text Notes 2200 4350 0    60   ~ 0
+Text Notes 2550 5450 0    60   ~ 0
 Grove Connector
 $Comp
 L Connector_Generic:Conn_01x02 J8
 U 1 1 5F96EDCC
-P 9700 1600
-F 0 "J8" H 9780 1592 50  0000 L CNN
-F 1 "INPUT" H 9780 1499 50  0000 L CNN
-F 2 "REInnovationFootprint:TH_SIL-2_screw_terminal_32A_LARGE" H 9700 1600 50  0001 C CNN
-F 3 "~" H 9700 1600 50  0001 C CNN
-	1    9700 1600
+P 10300 2800
+F 0 "J8" H 10380 2792 50  0000 L CNN
+F 1 "INPUT" H 10380 2699 50  0000 L CNN
+F 2 "REInnovationFootprint:TH_SIL-2_screw_terminal_32A_LARGE" H 10300 2800 50  0001 C CNN
+F 3 "~" H 10300 2800 50  0001 C CNN
+	1    10300 2800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J9
 U 1 1 5F96F436
-P 9700 2600
-F 0 "J9" H 9780 2592 50  0000 L CNN
-F 1 "OUTPUT" H 9780 2499 50  0000 L CNN
-F 2 "REInnovationFootprint:TH_SIL-2_screw_terminal_32A_LARGE" H 9700 2600 50  0001 C CNN
-F 3 "~" H 9700 2600 50  0001 C CNN
-	1    9700 2600
+P 10300 3800
+F 0 "J9" H 10380 3792 50  0000 L CNN
+F 1 "OUTPUT" H 10380 3699 50  0000 L CNN
+F 2 "REInnovationFootprint:TH_SIL-2_screw_terminal_32A_LARGE" H 10300 3800 50  0001 C CNN
+F 3 "~" H 10300 3800 50  0001 C CNN
+	1    10300 3800
 	1    0    0    -1  
 $EndComp
-Text HLabel 8950 1700 0    60   Input ~ 0
+Text HLabel 9550 2900 0    60   Input ~ 0
 Ishp
-Text HLabel 8950 2600 0    60   Input ~ 0
+Text HLabel 9550 3800 0    60   Input ~ 0
 Ishn
-Text HLabel 8950 2700 0    60   Input ~ 0
+Text HLabel 9550 3900 0    60   Input ~ 0
 GND
+$Comp
+L Device:R R?
+U 1 1 5F97676E
+P 9850 3400
+AR Path="/53073AD7/5F97676E" Ref="R?"  Part="1" 
+AR Path="/5F97676E" Ref="R6"  Part="1" 
+F 0 "R6" V 9930 3400 50  0000 C CNN
+F 1 "R_SHUNT" V 9850 3400 50  0000 C CNN
+F 2 "matts_components:Rshunt_universal" H 9850 3400 60  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/1755795.pdf" H 9850 3400 60  0001 C CNN
+F 4 "500mW" H 9850 3400 60  0001 C CNN "Description"
+F 5 "~" H 9850 3400 60  0001 C CNN "Notes"
+F 6 "Farnell" H 9850 3400 60  0001 C CNN "Supplier"
+F 7 "	2331878 " H 9850 3400 60  0001 C CNN "Code"
+F 8 "~" H 9850 3400 60  0001 C CNN "Cost"
+	1    9850 3400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	9500 1700 9400 1700
+	10100 2900 10000 2900
 Wire Wire Line
-	9400 1700 9400 2700
+	10000 2900 10000 3900
 Wire Wire Line
-	9400 2700 9500 2700
+	10000 3900 10100 3900
 Wire Wire Line
-	8950 2700 9400 2700
-Connection ~ 9400 2700
+	9550 3900 10000 3900
+Connection ~ 10000 3900
 Wire Wire Line
-	9500 2600 9250 2600
+	10100 3800 9850 3800
 Wire Wire Line
-	9250 2350 9250 2600
-Connection ~ 9250 2600
+	9850 3550 9850 3800
+Connection ~ 9850 3800
 Wire Wire Line
-	9250 2600 8950 2600
+	9850 3800 9550 3800
 Wire Wire Line
-	9250 2050 9250 1700
-Connection ~ 9250 1600
+	9850 3250 9850 2900
+Connection ~ 9850 2800
 Wire Wire Line
-	9250 1600 9500 1600
+	9850 2800 10100 2800
 Wire Wire Line
-	8950 1700 9250 1700
-Connection ~ 9250 1700
+	9550 2900 9850 2900
+Connection ~ 9850 2900
 Wire Wire Line
-	9250 1700 9250 1600
+	9850 2900 9850 2800
 Wire Wire Line
 	7600 2350 8350 2350
 Wire Wire Line
 	7650 4700 8350 4700
-Text Notes 1650 1650 0    60   ~ 0
-A0 and A1 set\nthe device ID\nA1                 A0                     Address\nGND             GND                     1000 000\nGND             VCC                      1000 001\nGND             SDA                      1000 010\nGND             SCL                      1000 011\nVCC             GND                      1000 100\nVCC             VCC                      1000 101\nPlus more - see datasheet
+Text Notes 1250 1650 0    60   ~ 0
+A0 and A1 set\nthe device ID\nA1                 A0                         Address\nGND             GND                     1000 000\nGND             VCC                      1000 001\nGND             SDA                      1000 010\nGND             SCL                       1000 011\nVCC             GND                      1000 100\nVCC             VCC                       1000 101\nPlus more - see datasheet
 Wire Wire Line
 	1850 2950 3750 2950
 Wire Wire Line
@@ -504,70 +523,76 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x01 J5
 U 1 1 5F9592EB
-P 4550 3750
-F 0 "J5" H 4630 3792 50  0000 L CNN
-F 1 "PCB" H 4630 3699 50  0000 L CNN
-F 2 "REInnovationFootprint:PCB_60x55_outline" H 4550 3750 50  0001 C CNN
-F 3 "~" H 4550 3750 50  0001 C CNN
-	1    4550 3750
+P 6100 6500
+F 0 "J5" H 6180 6542 50  0000 L CNN
+F 1 "PCB" H 6180 6449 50  0000 L CNN
+F 2 "REInnovationFootprint:PCB_60x55_outline" H 6100 6500 50  0001 C CNN
+F 3 "~" H 6100 6500 50  0001 C CNN
+	1    6100 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J6
 U 1 1 5F9594B5
-P 4550 4050
-F 0 "J6" H 4630 4092 50  0000 L CNN
-F 1 "LOGO1" H 4630 3999 50  0000 L CNN
-F 2 "CuriousElectric3:2019_011_16_CuriousElectricCompany_Logo_Round_Logo_No_words_KiCAD_10mm_PCBLogo" H 4550 4050 50  0001 C CNN
-F 3 "~" H 4550 4050 50  0001 C CNN
-	1    4550 4050
+P 6100 6800
+F 0 "J6" H 6180 6842 50  0000 L CNN
+F 1 "LOGO1" H 6180 6749 50  0000 L CNN
+F 2 "CuriousElectric3:2019_011_16_CuriousElectricCompany_Logo_Round_Logo_No_words_KiCAD_10mm_PCBLogo" H 6100 6800 50  0001 C CNN
+F 3 "~" H 6100 6800 50  0001 C CNN
+	1    6100 6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J7
 U 1 1 5F959603
-P 4550 4350
-F 0 "J7" H 4630 4392 50  0000 L CNN
-F 1 "LOGO2" H 4630 4299 50  0000 L CNN
-F 2 "CuriousElectric3:TCEC_Words_13mm" H 4550 4350 50  0001 C CNN
-F 3 "~" H 4550 4350 50  0001 C CNN
-	1    4550 4350
+P 6100 7100
+F 0 "J7" H 6180 7142 50  0000 L CNN
+F 1 "LOGO2" H 6180 7049 50  0000 L CNN
+F 2 "CuriousElectric3:TCEC_Words_13mm" H 6100 7100 50  0001 C CNN
+F 3 "~" H 6100 7100 50  0001 C CNN
+	1    6100 7100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4350 3750
-NoConn ~ 4350 4050
-NoConn ~ 4350 4350
+NoConn ~ 5900 6500
+NoConn ~ 5900 6800
+NoConn ~ 5900 7100
+Wire Wire Line
+	9200 1600 9200 2800
+Wire Wire Line
+	6250 1600 9200 1600
+Wire Wire Line
+	9200 2800 9850 2800
 $Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5F97668E
-P 2100 3750
-F 0 "J2" H 2017 3320 50  0000 C CNN
-F 1 "DATA" H 2017 3413 50  0000 C CNN
-F 2 "REInnovationFootprint:SIL-4_Grove_Labelled_Correct" H 2100 3750 50  0001 C CNN
-F 3 "~" H 2100 3750 50  0001 C CNN
-	1    2100 3750
+P 2450 4850
+F 0 "J2" H 2367 4420 50  0000 C CNN
+F 1 "DATA" H 2367 4513 50  0000 C CNN
+F 2 "REInnovationFootprint:SIL-4_Grove_Labelled_Correct" H 2450 4850 50  0001 C CNN
+F 3 "~" H 2450 4850 50  0001 C CNN
+	1    2450 4850
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 3650 2300 3650
+	2150 4750 2650 4750
 Wire Wire Line
-	2300 3650 2700 3650
-Connection ~ 2300 3650
+	2650 4750 3050 4750
+Connection ~ 2650 4750
 Wire Wire Line
-	2300 3750 2700 3750
+	2650 4850 3050 4850
 Wire Wire Line
-	2300 3750 1800 3750
-Connection ~ 2300 3750
+	2650 4850 2150 4850
+Connection ~ 2650 4850
 Wire Wire Line
-	1800 3850 2300 3850
+	2150 4950 2650 4950
 Wire Wire Line
-	2300 3850 2700 3850
-Connection ~ 2300 3850
+	2650 4950 3050 4950
+Connection ~ 2650 4950
 Wire Wire Line
-	2300 3950 2700 3950
+	2650 5050 3050 5050
 Wire Wire Line
-	1800 3950 2300 3950
-Connection ~ 2300 3950
+	2150 5050 2650 5050
+Connection ~ 2650 5050
 Text HLabel 1900 1900 0    60   Input ~ 0
 Vcc
 Text HLabel 2650 1900 0    60   Input ~ 0
@@ -576,24 +601,4 @@ Wire Wire Line
 	1900 1900 1950 1900
 Wire Wire Line
 	1950 1900 1950 2100
-Wire Wire Line
-	6250 1600 9250 1600
-$Comp
-L Device:R R?
-U 1 1 5F97676E
-P 9250 2200
-AR Path="/53073AD7/5F97676E" Ref="R?"  Part="1" 
-AR Path="/5F97676E" Ref="R6"  Part="1" 
-F 0 "R6" V 9330 2200 50  0000 C CNN
-F 1 "R_SHUNT" V 9150 2200 50  0000 C CNN
-F 2 "matts_components:Rshunt_universal" H 9250 2200 60  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1755795.pdf" H 9250 2200 60  0001 C CNN
-F 4 "500mW" H 9250 2200 60  0001 C CNN "Description"
-F 5 "~" H 9250 2200 60  0001 C CNN "Notes"
-F 6 "Farnell" H 9250 2200 60  0001 C CNN "Supplier"
-F 7 "	2331878 " H 9250 2200 60  0001 C CNN "Code"
-F 8 "~" H 9250 2200 60  0001 C CNN "Cost"
-	1    9250 2200
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

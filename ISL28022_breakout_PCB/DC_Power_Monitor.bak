@@ -373,7 +373,7 @@ U 1 1 5F968AD3
 P 1950 4850
 F 0 "J1" H 1867 4420 50  0000 C CNN
 F 1 "DATA" H 1867 4513 50  0000 C CNN
-F 2 "REInnovationFootprint:SIL-4_Grove_Labelled" H 1950 4850 50  0001 C CNN
+F 2 "REInnovationFootprint:SIL-4_Grove_Labelled_Correct" H 1950 4850 50  0001 C CNN
 F 3 "~" H 1950 4850 50  0001 C CNN
 	1    1950 4850
 	-1   0    0    -1  
@@ -382,9 +382,9 @@ Text HLabel 3050 4850 2    60   Input ~ 0
 SDA
 Text HLabel 3050 4750 2    60   Input ~ 0
 SCLK
-Text HLabel 3050 4950 2    60   Input ~ 0
-GND
 Text HLabel 3050 5050 2    60   Input ~ 0
+GND
+Text HLabel 3050 4950 2    60   Input ~ 0
 Vcc
 Text Notes 2550 5450 0    60   ~ 0
 Grove Connector
@@ -464,8 +464,8 @@ Wire Wire Line
 	7600 2350 8350 2350
 Wire Wire Line
 	7650 4700 8350 4700
-Text Notes 2750 1500 0    60   ~ 0
-A0 and A1 set\nthe device ID
+Text Notes 1250 1650 0    60   ~ 0
+A0 and A1 set\nthe device ID\nA1                 A0                         Address\nGND             GND                     1000 000\nGND             VCC                      1000 001\nGND             SDA                      1000 010\nGND             SCL                       1000 011\nVCC             GND                      1000 100\nVCC             VCC                       1000 101\nPlus more - see datasheet
 Wire Wire Line
 	1850 2950 3750 2950
 Wire Wire Line
@@ -482,7 +482,7 @@ U 1 1 5F94254E
 P 3000 2000
 F 0 "J3" H 3080 2042 50  0000 L CNN
 F 1 "ID_A0" H 2850 2350 50  0000 L CNN
-F 2 "REInnovationFootprint:TH_SIL_5_1mm" H 3000 2000 50  0001 C CNN
+F 2 "REInnovationFootprint:SM_SOLDER_ID_4_WAY" H 3000 2000 50  0001 C CNN
 F 3 "~" H 3000 2000 50  0001 C CNN
 	1    3000 2000
 	1    0    0    1   
@@ -493,7 +493,7 @@ U 1 1 5F94296A
 P 3600 2000
 F 0 "J4" H 3680 2042 50  0000 L CNN
 F 1 "ID_A1" H 3450 2350 50  0000 L CNN
-F 2 "REInnovationFootprint:TH_SIL_5_1mm" H 3600 2000 50  0001 C CNN
+F 2 "REInnovationFootprint:SM_SOLDER_ID_4_WAY" H 3600 2000 50  0001 C CNN
 F 3 "~" H 3600 2000 50  0001 C CNN
 	1    3600 2000
 	1    0    0    1   
@@ -532,7 +532,7 @@ U 1 1 5F9592EB
 P 6100 6500
 F 0 "J5" H 6180 6542 50  0000 L CNN
 F 1 "PCB" H 6180 6449 50  0000 L CNN
-F 2 "REInnovationFootprint:PCB_50x50_outline" H 6100 6500 50  0001 C CNN
+F 2 "REInnovationFootprint:PCB_60x55_outline" H 6100 6500 50  0001 C CNN
 F 3 "~" H 6100 6500 50  0001 C CNN
 	1    6100 6500
 	1    0    0    -1  
@@ -574,7 +574,7 @@ U 1 1 5F97668E
 P 2450 4850
 F 0 "J2" H 2367 4420 50  0000 C CNN
 F 1 "DATA" H 2367 4513 50  0000 C CNN
-F 2 "REInnovationFootprint:SIL-4_Grove_Labelled" H 2450 4850 50  0001 C CNN
+F 2 "REInnovationFootprint:SIL-4_Grove_Labelled_Correct" H 2450 4850 50  0001 C CNN
 F 3 "~" H 2450 4850 50  0001 C CNN
 	1    2450 4850
 	-1   0    0    -1  
