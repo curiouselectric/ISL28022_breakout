@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.4744514"
-     inkscape:cx="478.88459"
-     inkscape:cy="387.52296"
+     inkscape:zoom="0.90955805"
+     inkscape:cx="579.74928"
+     inkscape:cy="354.42916"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -53,7 +53,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -20071,20 +20071,6 @@
          x="42.456318"
          y="68.778801"
          style="font-size:3.52777px;stroke-width:0.264583">60mm</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
-       x="86.827003"
-       y="30.029556"
-       id="text31544-2"
-       inkscape:export-filename="C:\Users\wsmel\Desktop\ISL28022_PCB.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300"><tspan
-         sodipodi:role="line"
-         id="tspan31542-5"
-         x="86.827003"
-         y="30.029556"
-         style="font-size:3.52777px;stroke-width:0.264583">50mm</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
