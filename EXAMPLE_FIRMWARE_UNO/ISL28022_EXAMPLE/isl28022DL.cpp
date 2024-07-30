@@ -60,7 +60,7 @@ float power_isl28022::readRegister(int _address, int _reg)
   // It reads the data from the device register ISL28022register
   byte firstByte = 0;
   byte secondByte = 0;
-  int16_t valueInt16;
+  uint16_t valueInt16;
   float  valueFloat;
 
   Wire.beginTransmission(_address);  // Start write to address 0b1000000
